@@ -1,11 +1,19 @@
 .slideOff {
-     transform: scale(0);
-    opacity: 0;
-    transition: .3s all ease-out;
-    }
-    
-    .slideOn {
-      transform: scale(1);
-      opacity: 1;
-      transition: .3s all ease-in;
-    }
+  transform: scale(0);
+  opacity: 0;
+  transition: .3s all ease-out;
+}
+
+.slideOn {
+  transform: scale(1);
+  opacity: 1;
+  transition: .3s all ease-in;
+}
+
+@media screen and (max-width: 992px) {
+
+  table {
+    overflow-x: hidden;
+    font-size: 1rem;
+  }
+}
