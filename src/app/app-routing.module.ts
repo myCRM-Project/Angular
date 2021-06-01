@@ -10,12 +10,10 @@ import { LeadsComponent } from './comps/leads/leads.component';
 import { LoginComponent } from './comps/login/login.component';
 import { ReportsComponent } from './comps/reports/reports.component';
 import { SignupComponent } from './comps/signup/signup.component';
-import { ProdsComponent } from './firecomps/prods/prods.component';
 
 const routes: Routes = [
   { path: "", component: LoginComponent },
   { path: "signup", component: SignupComponent },
-  { path: "fire", component: ProdsComponent },
   {
     path: "admin", component: AppAdminComponent, children: [
       { path: "", component: CustomerListComponent },

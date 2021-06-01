@@ -23,7 +23,6 @@ export class LoginComponent implements OnInit {
         let data = await this.authSer.logInFb(formData.email,formData.password);
         // success log in
         if(data.user){
-          // TODO : redirect to admin
           localStorage.setItem("fb_user",data.user.uid)
           this.route.navigate(["/admin"])
         }

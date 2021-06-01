@@ -17,6 +17,4 @@ showSideNavbar:boolean = false;
     console.log(this.showSideNavbar)
   }
 
-
-
 }

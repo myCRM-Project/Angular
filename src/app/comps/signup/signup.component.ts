@@ -21,7 +21,6 @@ export class SignupComponent implements OnInit {
     let result = await this.authFb.signUpNewUser(user);
     console.log(result);
     if(result.user) {
-      // Todo add new record
       alert('Sign up succesful')
       this.dbFire.addUser(user);
       this.router.navigate(["/"])
@@ -35,7 +34,6 @@ export class SignupComponent implements OnInit {
     // result.user -> success
     // result.code -> problem
     return result;
-    //TODO: also add new record in db of firebase
   }
 
 }
